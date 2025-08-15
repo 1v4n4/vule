@@ -13,7 +13,8 @@ import HomeIcon from "@mui/icons-material/Home";
 import { Link } from "react-router-dom";
 
 const pages = [
-  { text: "Biografija", path: "/about" },
+  { text: "Treninzi i usluge", path: "/about" },
+  { text: "Biografija", path: "/bio" },
   { text: "Kontakt", path: "/contact" },
 ];
 
@@ -50,8 +51,10 @@ const Header = () => {
             <Button
               key={page.text}
               color="inherit"
+              size="large"
               component={Link}
               to={page.path}
+              sx={{ fontSize: "1.2rem", fontWeight: "bold" }}
             >
               {page.text}
             </Button>

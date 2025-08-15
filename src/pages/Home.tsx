@@ -1,5 +1,5 @@
 import { Box, Container, Typography, Link, Button } from "@mui/material";
-import seaBook from "../assets/yuriy-kovalev.jpg"; // rename your file and place in src/assets
+import seaBook from "../assets/yuriy-kovalev.jpg";
 
 const Home = () => {
   return (
@@ -26,8 +26,8 @@ const Home = () => {
         </Typography>
         <Typography variant="h6">
           Sa više od 20 godina iskustva i međunarodnim obrazovanjem iz
-          hipnoterapije, psihoanalize i bioenergetskih tretmana, Vuksan pomaže
-          ljudima da prevaziđu anksioznost, stres i emotivne blokade.
+          hipnoterapije, psihoanalize i bioenergetskih tretmana, pomaže ljudima
+          da prevaziđu anksioznost, stres i emotivne blokade.
         </Typography>
         <Typography variant="h6">
           Specijalizovan za integrativnu hipnoterapiju, Eriksonovu

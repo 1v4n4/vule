@@ -26,49 +26,12 @@ const Bio = () => {
         maxWidth="md"
         sx={{ bgcolor: "rgba(0,0,0,0.6)", p: 4, borderRadius: 2 }}
       >
-        {/* Header */}
-        <Typography variant="h2" component="h1" gutterBottom>
-          Evoltetra – O nama
-        </Typography>
-        <Typography variant="h5" paragraph>
-          Specijalizovani treninzi i usluge: hipnoterapija, Eriksonova
-          psihoterapija, Past Life Regression i NLP edukacija.
-        </Typography>
-
-        {/* Services List */}
-        <List>
-          <ListItem>
-            <strong>1. Tehnike relaksacije:</strong> Redukovanje anksioznosti uz
-            primjenu integrativne hipnoterapije i kognitivno-bihevioralnih
-            tehnika (KBT)
-          </ListItem>
-          <ListItem>
-            <strong>2. Trening hipnoterapije i Eriksonove psihoterapije</strong>
-          </ListItem>
-          <ListItem>
-            <strong>3. Trening regresoterapije – Past Life Regression</strong>
-          </ListItem>
-          <ListItem>
-            <strong>4. NLP edukacija</strong>
-          </ListItem>
-          <ListItem>
-            <strong>5. Bioenergetski tretmani:</strong> Bioenergija i tretmani
-            obnavljaju energetsku ravnotežu, mogu ublažiti bolove u leđima i
-            mišićima, smanjiti stres i anksioznost, poboljšati kvalitet sna i
-            dobro raspoloženje.
-          </ListItem>
-        </List>
-
-        <Divider sx={{ my: 4, borderColor: "white" }} />
-
-        {/* Contact Info */}
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h2" component="h2" gutterBottom>
           Vuksan Vuksanović
         </Typography>
-        <Typography variant="body1" paragraph>
-          Sertifikovani trener i terapeut
-        </Typography>
-        <Typography variant="body1" paragraph>
+        <Typography variant="h5">Sertifikovani trener i terapeut</Typography>
+        <br />
+        <Typography variant="body1">
           📍 Podgorica <br />
           📞{" "}
           <Link href="tel:+38267036870" color="inherit">
@@ -77,8 +40,8 @@ const Bio = () => {
           <br />
           📧{" "}
           <Link href="mailto:wuksan69@gmail.com" color="inherit">
-            wuksan69@gmail.com
-          </Link>{" "}
+            wuksan.wuksanovic@gmail.com
+          </Link>
           <br />
           🌐{" "}
           <Link
@@ -90,14 +53,12 @@ const Bio = () => {
             LinkedIn
           </Link>
         </Typography>
-
         <Divider sx={{ my: 4, borderColor: "white" }} />
-
         {/* CV Section */}
         <Typography variant="h4" gutterBottom>
           O meni
         </Typography>
-        <Typography variant="body1" paragraph>
+        <Typography variant="body1">
           Hipnoterapeut i bioenergetičar sa preko 20 godina kontinuiranog
           usavršavanja u oblasti psihoanalize i Eriksonove psihoterapije i
           kliničke hipnoterapije. Obrazovao se u Hrvatskoj, Francuskoj i
@@ -105,7 +66,6 @@ const Bio = () => {
           studije transdisciplinarne humanistike. Pisac i učesnik na
           međunarodnim konferencijama i seminarima.
         </Typography>
-
         <Typography variant="h5" gutterBottom>
           Obrazovanje
         </Typography>
@@ -126,7 +86,6 @@ const Bio = () => {
           </ListItem>
           <ListItem>Bibliotekarske kvalifikacije</ListItem>
         </List>
-
         <Typography variant="h5" gutterBottom>
           Učešće na konferencijama
         </Typography>
@@ -143,13 +102,12 @@ const Bio = () => {
             On the Ambivalence with our Mothers | London, 2025
           </ListItem>
         </List>
-
         <Typography variant="h5" gutterBottom>
           Sertifikati
         </Typography>
-        <Typography variant="body1" paragraph>
-          Hipnoterapija, Trening, Bioterapija – preko 20 certificiranih kurseva
-          i licenci iz integrativne hipnoterapije, Past Life Regression, NLP,
+        <Typography variant="body1">
+          Hipnoterapija Trening, Bioterapija – preko 20 certificiranih kurseva i
+          licenci iz integrativne hipnoterapije, Past Life Regression, NLP,
           Bioenergetskih tretmana i Eriksonove psihoterapije.
         </Typography>
       </Container>

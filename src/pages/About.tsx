@@ -1,4 +1,4 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Button, Container, Typography } from "@mui/material";
 import pic from "../assets/yuriy-kovalev.jpg";
 
 const About = () => {
@@ -24,11 +24,6 @@ const About = () => {
           textAlign: "center",
         }}
       >
-        {/* HEADLINE */}
-        <Typography variant="h3" sx={{ lineHeight: 1.3, mb: 3 }}>
-          Specijalizovani treninzi i usluge
-        </Typography>
-
         <Typography
           variant="h5"
           gutterBottom
@@ -38,13 +33,13 @@ const About = () => {
           edukacija
         </Typography>
 
+        <Typography variant="h3" sx={{ lineHeight: 1.3, mb: 3 }}>
+          Specijalizovani treninzi
+        </Typography>
+
         {/* Services List */}
         <Box>
           {[
-            {
-              title: "Tehnike relaksacije",
-              desc: "Redukovanje anksioznosti uz primjenu integrativne hipnoterapije i kognitivno-bihevioralnih tehnika (KBT).",
-            },
             {
               title: "Trening hipnoterapije i Eriksonove psihoterapije",
               desc: "Razvijanje veština i tehnika za profesionalnu primenu u radu sa klijentima.",
@@ -57,6 +52,41 @@ const About = () => {
               title: "NLP edukacija",
               desc: "Praktične metode za unapređenje komunikacije, motivacije i ličnog razvoja.",
             },
+          ].map((service, index) => (
+            <Box key={index} sx={{ mb: 3 }}>
+              <Typography
+                variant="h6"
+                sx={{ color: "text.primary", fontWeight: 600, mb: 1 }}
+              >
+                {service.title}
+              </Typography>
+              <Typography variant="body1" sx={{ color: "text.primary" }}>
+                {service.desc}
+              </Typography>
+            </Box>
+          ))}
+        </Box>
+        <Button
+          variant="contained"
+          color="primary"
+          sx={{ mb: 4 }}
+          href="/kursevi.pdf"
+          download
+        >
+          📄 Detaljnije o treninzima: preuzmi PDF
+        </Button>
+
+        {/* HEADLINE */}
+        <Typography variant="h3" sx={{ lineHeight: 1.3, mb: 3 }}>
+          Tretmani i usluge
+        </Typography>
+        <Box>
+          {[
+            {
+              title: "Tehnike relaksacije",
+              desc: "Redukovanje anksioznosti uz primjenu integrativne hipnoterapije i kognitivno-bihevioralnih tehnika (KBT).",
+            },
+
             {
               title: "Bioenergetski tretmani",
               desc: "Bioenergija i s njom povezani tretmani obnavljaju energetsku ravnotežu, mogu ublažiti bolove u leđima i mišićima, smanjiti stres i anksioznost, poboljšati kvalitet sna i dobro raspoloženje.",

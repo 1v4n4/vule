@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <Box sx={{ bgcolor: "#e0e0e0", minHeight: "100vh", pb: 6 }}>
       {/* TOP LOGO */}
-      <Container maxWidth="sm" sx={{ py: 6, textAlign: "center" }}>
+      <Container maxWidth="sm" sx={{ py: 2, textAlign: "center" }}>
         <Box
           component="img"
           src={logo}

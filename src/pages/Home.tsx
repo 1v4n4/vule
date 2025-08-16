@@ -33,8 +33,14 @@ export default function Home() {
           variant="h3"
           sx={{
             textAlign: "center",
-            lineHeight: 1.3,
+            lineHeight: 1.2,
             mb: 4,
+            fontSize: {
+              xs: "1.6rem", // small screens
+              sm: "2rem",
+              md: "2.5rem", // medium
+              lg: "3rem", // large screens
+            },
           }}
         >
           INTEGRATIVNA HIPNOTERAPIJA I

@@ -18,7 +18,6 @@ const Bio = () => {
         description="Sertifikovani hipnoterapeut i bioenergetičar sa 20+ godina iskustva. Edukacije, kursevi i individualni tretmani."
         keywords="hipnoterapija, bioenergija, psihoterapija, terapija, edukacija"
         url="https://terapija.me/bio"
-        i
       />
       <Box
         sx={{

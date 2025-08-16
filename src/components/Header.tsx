@@ -13,9 +13,9 @@ import HomeIcon from "@mui/icons-material/Home";
 import { Link } from "react-router-dom";
 
 const pages = [
-  { text: "Treninzi i usluge", path: "/about" },
+  { text: "Treninzi i usluge", path: "/usluge" },
   { text: "Biografija", path: "/bio" },
-  { text: "Kontakt", path: "/contact" },
+  { text: "Kontakt", path: "/kontakt" },
 ];
 
 const Header = () => {

@@ -88,49 +88,123 @@ const Bio = () => {
         </Typography>
         <List sx={{ mb: 3 }}>
           <ListItem>
-            PhD kandidat | Transdisciplinarne humanistike, mediji i komunikacija
+            Master, Filozofski fakultet, Univerzitet Crne Gore
           </ListItem>
           <ListItem>
-            Master psihoanalize | GCAS College Dublin | u toku
+            Master psihoanalize, Dablin, Irska (GCAS College Dublin, u toku)
+          </ListItem>
+          <ListItem>PhD: Transdiciplinarna humanistika, SR (u toku)</ListItem>
+          <ListItem>Transakciona analiza SATA (2003/2004)</ListItem>
+          <ListItem>Transakciona analiza (TA 2003–2005)</ListItem>
+          <ListItem>
+            Jungova analitička psihologija, Belgrade Analytical Circle
+            (2005–2008)
           </ListItem>
           <ListItem>
-            Master filozofije | Filozofski fakultet, Univerzitet Crne Gore |
-            2012
+            Certified Specialist in Hypnosis for Anxieties and Fears, American
+            Hypnosis Association (Cert. No. 260787)
           </ListItem>
           <ListItem>
-            Osnovne studije filozofije | Filozofski fakultet, Univerzitet Crne
-            Gore
+            Certified Specialist Past-Life Regression Therapist, American
+            Hypnosis Association (Cert. No. 260786)
           </ListItem>
-          <ListItem>Bibliotekarske kvalifikacije</ListItem>
+          <ListItem>Licensed Hypnotherapist (HUPED) 2019</ListItem>
+          <ListItem>
+            European Federation for Natural, Energy, and Spiritual Medicine
+            (EUNES, Licence No. 1179)
+          </ListItem>
+          <ListItem>
+            Certified Consulting Hypnotist, National Guild of Hypnotists (NGH),
+            2019
+          </ListItem>
+          <ListItem>
+            Programi za verbalnu i neverbalnu komunikaciju, hipnoterapiju i NLP
+            (Francuska, 2017), ISI-CNV International Institute for
+            Neuro-Linguistic Programming (NLP), Hypnosis, Communication – Non
+            Verbal (CNV), Leadership and Coaching
+          </ListItem>
+          <ListItem>
+            Advanced Non-Verbal Hypnosis and Mesmerism, Université Européenne /
+            International Institute of Hypnosis and NLP (Cert. No. 1230519)
+          </ListItem>
+          <ListItem>Certified Hypnotherapist, Hrvatska, 2019</ListItem>
+          <ListItem>Certified Life Coach, Hrvatska</ListItem>
+          <ListItem>
+            Licensed Bioenergy Therapist, European Federation for Natural,
+            Energy, and Spiritual Medicine (EUPED)
+          </ListItem>
+          <ListItem>
+            Diploma in Bioenergy Therapy, International Academy of Spiritual
+            Development and Innovative Technologies, Moscow (Diploma No. 3156)
+          </ListItem>
+          <ListItem>
+            Licensed Biotherapy Practitioner, European Federation for Natural,
+            Energy, and Spiritual Medicine (EUNES, Licence No. 1179)
+          </ListItem>
+          <ListItem>
+            Master/Teacher of Gendai Reiki Ho, Asklepios Association, Belgrade,
+            Serbia (2017)
+          </ListItem>
+          <ListItem>
+            Magnetista Emeritus (MJ) & Magnetista Junior (MJ), Université
+            Européenne / International Institute of Hypnosis and NLP (Cert. No.
+            1230519)
+          </ListItem>
+          <ListItem>Quantum Physiotherapy (Cert. No. 1230519)</ListItem>
+        </List>
+
+        {/* MEMBERSHIPS */}
+        <Typography variant="h5" gutterBottom>
+          Udruženja
+        </Typography>
+        <List sx={{ mb: 3 }}>
+          <ListItem>Psychohistorical Association NY (2021)</ListItem>
+          <ListItem>
+            European Society for Traumatic Stress Studies (#3889)
+          </ListItem>
+          <ListItem>American Hypnosis Association (005435)</ListItem>
+          <ListItem>National Guild of Hypnotists (2019)</ListItem>
+        </List>
+
+        {/* PUBLICATIONS */}
+        <Typography variant="h5" gutterBottom>
+          Publikacije
+        </Typography>
+        <List sx={{ mb: 3 }}>
+          <ListItem>Zemlja (Nova Knjiga, 2010)</ListItem>
+          <ListItem>Sjaj (CID, 2021)</ListItem>
+          <ListItem>Čarobna placenta (2022)</ListItem>
         </List>
 
         {/* CONFERENCES */}
         <Typography variant="h5" gutterBottom>
-          Učešće na konferencijama
+          Učešće na konferencijama i seminarima
         </Typography>
         <List sx={{ mb: 3 }}>
           <ListItem>
-            Biopolitics and the Biotechnological 'Enhancement' of Humanity |
-            IPhA 48th Annual Conference, 2025
+            Biopolitics and the Biotechnological 'Enhancement' of Humanity: A
+            Psychohistorical Interpretation of Posthumanist and Transhumanist
+            Visions of the Future through the Lens of Neoliberal Governance and
+            Late Capitalism — IPhA 48th Annual Conference (May 23-25, 2025)
           </ListItem>
           <ListItem>
-            Philosophy and Fantasy | IPhA Conference, New York, 2021
+            Philosophy and Fantasy — International Psychohistorical Association
+            Conference, New York (May 2021)
           </ListItem>
-          <ListItem>Women & Freud | Freud Museum London, 2024-25</ListItem>
           <ListItem>
-            On the Ambivalence with our Mothers | London, 2025
+            Women & Freud (Freud Museum London), On the Ambivalence with our
+            Mothers (Freud Museum London, May 2025)
+          </ListItem>
+          <ListItem>
+            Object Relations Institute USA and the Psychohistory Forum —
+            Psychobiography Reading Group, 13th Meeting Dedicated to Eric R.
+            Kandel (2025)
+          </ListItem>
+          <ListItem>
+            Frojdian Research Seminar — The Sphinx as Figure (Frojdian Research
+            Seminar Series, 2025)
           </ListItem>
         </List>
-
-        {/* CERTIFICATES */}
-        <Typography variant="h5" gutterBottom>
-          Sertifikati
-        </Typography>
-        <Typography variant="body1">
-          Hipnoterapija Trening, Bioterapija – preko 20 certificiranih kurseva i
-          licenci iz integrativne hipnoterapije, Past Life Regression, NLP,
-          Bioenergetskih tretmana i Eriksonove psihoterapije.
-        </Typography>
       </Container>
     </Box>
   );

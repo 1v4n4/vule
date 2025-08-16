@@ -1,4 +1,4 @@
-import { Box, Container, Typography, Link, Button } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import seaBook from "../assets/jessica-mangano.jpg"; // rename your file and place in src/assets
 
 const Contact = () => {

@@ -1,5 +1,6 @@
-import { Box, Container, Typography, Link, Button } from "@mui/material";
+import { Box, Container, Typography, Link } from "@mui/material";
 import logo from "../assets/logo.svg";
+import Consult from "../components/Consult";
 
 export default function Home() {
   return (
@@ -158,9 +159,7 @@ export default function Home() {
             wuksan.wuksanovic@gmail.com
           </Link>
         </Typography>
-        <Button variant="contained" color="primary" size="large">
-          Zakažite besplatnu konsultaciju
-        </Button>
+        <Consult />
       </Container>
     </Box>
   );

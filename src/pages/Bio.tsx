@@ -7,14 +7,14 @@ import {
   Link,
   Divider,
 } from "@mui/material";
-import seaBook from "../assets/yuriy-kovalev.jpg";
+import pic from "../assets/yuriy-kovalev.jpg";
 
 const Bio = () => {
   return (
     <Box
       sx={{
         minHeight: "100vh",
-        backgroundImage: `url(${seaBook})`,
+        backgroundImage: `url(${pic})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         display: "flex",

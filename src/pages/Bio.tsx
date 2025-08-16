@@ -19,19 +19,32 @@ const Bio = () => {
         backgroundPosition: "center",
         display: "flex",
         alignItems: "center",
-        color: "white",
+        justifyContent: "center",
+        py: 6,
       }}
     >
       <Container
         maxWidth="md"
-        sx={{ bgcolor: "rgba(0,0,0,0.6)", p: 4, borderRadius: 2 }}
+        sx={{
+          bgcolor: "rgba(91, 90, 88, 0.1)",
+          p: { xs: 3, md: 5 },
+          borderRadius: 2,
+          color: "text.primary",
+        }}
       >
-        <Typography variant="h2" component="h2" gutterBottom>
+        {/* HEADER */}
+        <Typography variant="h3" sx={{ mb: 1, textAlign: "center" }}>
           Vuksan Vuksanović
         </Typography>
-        <Typography variant="h5">Sertifikovani trener i terapeut</Typography>
-        <br />
-        <Typography variant="body1">
+        <Typography
+          variant="h5"
+          sx={{ mb: 3, textAlign: "center", fontStyle: "italic" }}
+        >
+          Sertifikovani trener i terapeut
+        </Typography>
+
+        {/* CONTACT */}
+        <Typography variant="body1" sx={{ mb: 4, textAlign: "center" }}>
           📍 Podgorica <br />
           📞{" "}
           <Link href="tel:+38267036870" color="inherit">
@@ -53,12 +66,14 @@ const Bio = () => {
             LinkedIn
           </Link>
         </Typography>
-        <Divider sx={{ my: 4, borderColor: "white" }} />
-        {/* CV Section */}
+
+        <Divider sx={{ my: 4, borderColor: "text.primary" }} />
+
+        {/* BIO */}
         <Typography variant="h4" gutterBottom>
           O meni
         </Typography>
-        <Typography variant="body1">
+        <Typography variant="body1" sx={{ mb: 3 }}>
           Hipnoterapeut i bioenergetičar sa preko 20 godina kontinuiranog
           usavršavanja u oblasti psihoanalize i Eriksonove psihoterapije i
           kliničke hipnoterapije. Obrazovao se u Hrvatskoj, Francuskoj i
@@ -66,10 +81,12 @@ const Bio = () => {
           studije transdisciplinarne humanistike. Pisac i učesnik na
           međunarodnim konferencijama i seminarima.
         </Typography>
+
+        {/* EDUCATION */}
         <Typography variant="h5" gutterBottom>
           Obrazovanje
         </Typography>
-        <List>
+        <List sx={{ mb: 3 }}>
           <ListItem>
             PhD kandidat | Transdisciplinarne humanistike, mediji i komunikacija
           </ListItem>
@@ -86,10 +103,12 @@ const Bio = () => {
           </ListItem>
           <ListItem>Bibliotekarske kvalifikacije</ListItem>
         </List>
+
+        {/* CONFERENCES */}
         <Typography variant="h5" gutterBottom>
           Učešće na konferencijama
         </Typography>
-        <List>
+        <List sx={{ mb: 3 }}>
           <ListItem>
             Biopolitics and the Biotechnological 'Enhancement' of Humanity |
             IPhA 48th Annual Conference, 2025
@@ -102,6 +121,8 @@ const Bio = () => {
             On the Ambivalence with our Mothers | London, 2025
           </ListItem>
         </List>
+
+        {/* CERTIFICATES */}
         <Typography variant="h5" gutterBottom>
           Sertifikati
         </Typography>

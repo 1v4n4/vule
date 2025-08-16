@@ -1,57 +1,161 @@
 import { Box, Container, Typography, Link, Button } from "@mui/material";
-import seaBook from "../assets/yuriy-kovalev.jpg";
+import logo from "../assets/logo.svg";
 
-const Home = () => {
+export default function Home() {
   return (
-    <Box
-      sx={{
-        minHeight: "100vh",
-        backgroundImage: `url(${seaBook})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        display: "flex",
-        alignItems: "center",
-        color: "white",
-      }}
-    >
+    <Box sx={{ bgcolor: "#e0e0e0", minHeight: "100vh", pb: 6 }}>
+      {/* TOP LOGO */}
+      <Container maxWidth="sm" sx={{ py: 6, textAlign: "center" }}>
+        <Box
+          component="img"
+          src={logo}
+          alt="Logo"
+          sx={{
+            width: { xs: "40%", sm: 150, md: 200 },
+            height: "auto",
+            mx: "auto",
+          }}
+        />
+      </Container>
+
+      {/* SERVICES / ABOUT BOX */}
       <Container
         maxWidth="md"
-        sx={{ bgcolor: "rgba(0,0,0,0.6)", p: 4, borderRadius: 2 }}
+        sx={{
+          bgcolor: "rgba(91, 90, 88, 0.1)",
+          p: { xs: 3, md: 5 },
+          borderRadius: 2,
+          mx: "auto",
+        }}
       >
-        <Typography variant="h2" component="h1" gutterBottom>
-          Vuksan Vuksanović
+        {/* HEADLINE */}
+        <Typography
+          variant="h3"
+          sx={{
+            textAlign: "center",
+            lineHeight: 1.3,
+            mb: 4,
+          }}
+        >
+          INTEGRATIVNA HIPNOTERAPIJA I
+          <br />
+          PSIHOANALITIČKO SAVJETOVANJE
         </Typography>
-        <Typography variant="h5" gutterBottom>
-          Hipnoterapeut • Bioenergetičar • Trener ličnog razvoja
-        </Typography>
-        <Typography variant="h6">
-          Sa više od 20 godina iskustva i međunarodnim obrazovanjem iz
-          hipnoterapije, psihoanalize i bioenergetskih tretmana, pomaže ljudima
-          da prevaziđu anksioznost, stres i emotivne blokade.
-        </Typography>
-        <Typography variant="h6">
-          Specijalizovan za integrativnu hipnoterapiju, Eriksonovu
-          psihoterapiju, Past Life Regression, NLP edukaciju i bioenergetske
-          tretmane, pruža i individualne seanse i stručne treninge.
-        </Typography>
-        <Typography variant="body1">
+
+        {/* SERVICES */}
+        <Box mb={4}>
+          <Typography
+            variant="h4"
+            component="h2"
+            gutterBottom
+            sx={{ color: "text.primary", textAlign: "center" }}
+          >
+            Specijalizovani treninzi i usluge
+          </Typography>
+
+          <Typography
+            variant="subtitle1"
+            gutterBottom
+            sx={{
+              fontStyle: "italic",
+              color: "text.secondary",
+              textAlign: "center",
+            }}
+          >
+            Hipnoterapija • Eriksonova psihoterapija • Regresoterapija • NLP
+            edukacija
+          </Typography>
+
+          <Box mt={3}>
+            {[
+              {
+                title: "Tehnike relaksacije",
+                desc: "Redukovanje anksioznosti uz primjenu integrativne hipnoterapije i kognitivno-bihevioralnih tehnika (KBT).",
+              },
+              {
+                title: "Trening hipnoterapije i Eriksonove psihoterapije",
+                desc: "Razvijanje veština i tehnika za profesionalnu primenu u radu sa klijentima.",
+              },
+              {
+                title: "Trening regresoterapije – Past Life Regression",
+                desc: "Naučite kako da vodite klijente kroz sigurno i transformativno iskustvo regresije.",
+              },
+              {
+                title: "NLP edukacija",
+                desc: "Praktične metode za unapređenje komunikacije, motivacije i ličnog razvoja.",
+              },
+              {
+                title: "Bioenergetski tretmani",
+                desc: "Bioenergija i s njom povezani tretmani obnavljaju energetsku ravnotežu, mogu ublažiti bolove u leđima i mišićima, smanjiti stres i anksioznost, poboljšati kvalitet sna i dobro raspoloženje.",
+              },
+            ].map((service, i) => (
+              <Box key={i} mb={2}>
+                <Typography
+                  variant="h6"
+                  sx={{ color: "text.primary", fontWeight: 600 }}
+                >
+                  {service.title}
+                </Typography>
+                <Typography variant="body1" sx={{ color: "text.primary" }}>
+                  {service.desc}
+                </Typography>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+
+        {/* ABOUT */}
+        <Box>
+          <Typography
+            variant="h4"
+            component="h1"
+            gutterBottom
+            sx={{ textAlign: "center" }}
+          >
+            Vuksan Vuksanović
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            gutterBottom
+            sx={{
+              fontStyle: "italic",
+              color: "text.secondary",
+              textAlign: "center",
+            }}
+          >
+            Hipnoterapeut • Bioenergetičar • Trener ličnog razvoja
+          </Typography>
+          <Typography variant="body1" paragraph sx={{ textAlign: "center" }}>
+            Sa više od 20 godina iskustva i međunarodnim obrazovanjem iz
+            hipnoterapije, psihoanalize i bioenergetskih tretmana, pomaže
+            ljudima da prevaziđu anksioznost, stres i emotivne blokade.
+          </Typography>
+          <Typography variant="body1" paragraph sx={{ textAlign: "center" }}>
+            Specijalizovan za integrativnu hipnoterapiju, Eriksonovu
+            psihoterapiju, Past Life Regression, NLP edukaciju i bioenergetske
+            tretmane, pruža i individualne seanse i stručne treninge.
+          </Typography>
+        </Box>
+      </Container>
+
+      {/* CONTACT */}
+      <Container maxWidth="sm" sx={{ textAlign: "center", mt: 6 }}>
+        <Typography variant="body1" paragraph>
           📍 Podgorica <br />
           📞{" "}
           <Link href="tel:+38267036870" color="inherit">
             +382 67 036 870
-          </Link>{" "}
+          </Link>
           <br />
           📧{" "}
-          <Link href="mailto:wuksan69@gmail.com" color="inherit">
+          <Link href="mailto:wuksan.wuksanovic@gmail.com" color="inherit">
             wuksan.wuksanovic@gmail.com
           </Link>
         </Typography>
-        <Button variant="contained" color="primary" size="large" sx={{ mt: 2 }}>
+        <Button variant="contained" color="primary" size="large">
           Zakažite besplatnu konsultaciju
         </Button>
       </Container>
     </Box>
   );
-};
-
-export default Home;
+}

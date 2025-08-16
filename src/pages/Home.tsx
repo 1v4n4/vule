@@ -130,12 +130,7 @@ export default function Home() {
               textAlign: "center",
             }}
           >
-            Hipnoterapeut • Bioenergetičar • Trener ličnog razvoja
-          </Typography>
-          <Typography variant="body1" paragraph sx={{ textAlign: "center" }}>
-            Sa više od 20 godina iskustva i međunarodnim obrazovanjem iz
-            hipnoterapije, psihoanalize i bioenergetskih tretmana, pomaže
-            ljudima da prevaziđu anksioznost, stres i emotivne blokade.
+            Hipnoterapeut • Bioenergetičar • Trener
           </Typography>
           <Typography variant="body1" paragraph sx={{ textAlign: "center" }}>
             Specijalizovan za integrativnu hipnoterapiju, Eriksonovu

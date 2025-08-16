@@ -41,8 +41,13 @@ const About = () => {
         <Box>
           {[
             {
-              title: "Trening hipnoterapije i Eriksonove psihoterapije",
-              desc: "Razvijanje veština i tehnika za profesionalnu primenu u radu sa klijentima.",
+              title: "Interdisciplinarni kurs „Uvod u psihoanalizu“",
+              desc: "Hermeneutičko-klinički pristup ključnim konceptima Frojda, Lakana i Junga, kroz kombinaciju predavanja, seminara i radionica, namijenjen je psiholozima, psihijatrima, psihoterapeutima u edukaciji, studentima završnih godina i istraživačima humanistike. (online, 12 sedmica, 36 sati)",
+            },
+            {
+              title:
+                "Interdisciplinarni kurs „Klinička hipnoterapija, hipnoanaliza i Eriksonova psihoterapija“",
+              desc: "Kombinuje teoriju, praksu i superviziju s ciljem primjene hipnoze u kliničkom radu. Program obuhvata istorijske, neuropsihološke i etičke osnove hipnoze, direktne i Eriksonovske indukcije, hipnoanalizu nesvjesnih konflikata i integraciju s psihodinamskim modelima. Polaznici kroz supervizirane seanse, rad u parovima i studije slučaja stiču kompetencije za samostalni terapeutski rad i završavaju kurs diplomom hipnoterapeuta. (12 mjeseci, 300 sati) ",
             },
             {
               title: "Trening regresoterapije – Past Life Regression",

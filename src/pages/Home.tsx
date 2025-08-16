@@ -132,7 +132,7 @@ export default function Home() {
           >
             Hipnoterapeut • Bioenergetičar • Trener
           </Typography>
-          <Typography variant="body1" paragraph sx={{ textAlign: "center" }}>
+          <Typography variant="body1" sx={{ textAlign: "center" }}>
             Specijalizovan za integrativnu hipnoterapiju, Eriksonovu
             psihoterapiju, Past Life Regression, NLP edukaciju i bioenergetske
             tretmane, pruža i individualne seanse i stručne treninge.

@@ -9,16 +9,13 @@ const theme = createTheme({
     fontFamily: "Montserrat, sans-serif",
 
     allVariants: {
-      color: "#5B5A58", // will apply to all Typography variants
+      color: "#5B5A58",
     },
   },
   palette: {
     background: {
-      default: "#e0e0e0", // set your background color here
+      default: "#e0e0e0",
     },
-    // text: {
-    //   primary: "#5B5A58",
-    // },
   },
 });
 

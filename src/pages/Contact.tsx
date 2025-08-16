@@ -3,6 +3,7 @@ import { useState } from "react";
 import pic from "../assets/yuriy-kovalev.jpg";
 import emailjs from "@emailjs/browser";
 import Consult from "../components/Consult";
+import Seo from "../components/Seo";
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -42,82 +43,90 @@ const Contact = () => {
   };
 
   return (
-    <Box
-      sx={{
-        minHeight: "93vh",
-        backgroundImage: `url(${pic})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        display: "flex-column",
-        alignItems: "center",
-        justifyContent: "center",
-        pt: 10,
-      }}
-    >
-      <Container
-        maxWidth="md"
-        sx={{
-          bgcolor: "rgba(91, 90, 88, 0.1)",
-          p: { xs: 3, md: 5 },
-          borderRadius: 2,
-          color: "text.primary",
-        }}
-      >
-        <Typography variant="h4" gutterBottom textAlign="center">
-          Kontakt
-        </Typography>
-
-        <Box
-          component="form"
-          onSubmit={handleSubmit}
-          sx={{ display: "flex", flexDirection: "column", gap: 2 }}
-        >
-          <TextField
-            label="Ime"
-            name="name"
-            value={form.name}
-            onChange={handleChange}
-            required
-            fullWidth
-          />
-          <TextField
-            label="Email"
-            name="email"
-            type="email"
-            value={form.email}
-            onChange={handleChange}
-            required
-            fullWidth
-          />
-          <TextField
-            label="Poruka"
-            name="message"
-            value={form.message}
-            onChange={handleChange}
-            multiline
-            rows={4}
-            required
-            fullWidth
-          />
-          <Button
-            type="submit"
-            variant="contained"
-            color="primary"
-            size="large"
-          >
-            Pošalji
-          </Button>
-          {status && <Typography textAlign="center">{status}</Typography>}
-        </Box>
-      </Container>
+    <>
+      <Seo
+        title="Kontakt - Terapija.me"
+        description="Kontaktirajte Vuksana Vuksanovića za hipnoterapiju, bioenergiju, savjetovanja i edukacije. Podgorica, Crna Gora."
+        keywords="hipnoterapija, bioenergija, psihoterapija, terapija, kontakt, edukacije"
+        url="https://terapija.me/kontakt"
+      />
       <Box
         sx={{
-          mt: 10,
+          minHeight: "93vh",
+          backgroundImage: `url(${pic})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          display: "flex-column",
+          alignItems: "center",
+          justifyContent: "center",
+          pt: 10,
         }}
       >
-        <Consult />
+        <Container
+          maxWidth="md"
+          sx={{
+            bgcolor: "rgba(91, 90, 88, 0.1)",
+            p: { xs: 3, md: 5 },
+            borderRadius: 2,
+            color: "text.primary",
+          }}
+        >
+          <Typography variant="h4" gutterBottom textAlign="center">
+            Kontakt
+          </Typography>
+
+          <Box
+            component="form"
+            onSubmit={handleSubmit}
+            sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+          >
+            <TextField
+              label="Ime"
+              name="name"
+              value={form.name}
+              onChange={handleChange}
+              required
+              fullWidth
+            />
+            <TextField
+              label="Email"
+              name="email"
+              type="email"
+              value={form.email}
+              onChange={handleChange}
+              required
+              fullWidth
+            />
+            <TextField
+              label="Poruka"
+              name="message"
+              value={form.message}
+              onChange={handleChange}
+              multiline
+              rows={4}
+              required
+              fullWidth
+            />
+            <Button
+              type="submit"
+              variant="contained"
+              color="primary"
+              size="large"
+            >
+              Pošalji
+            </Button>
+            {status && <Typography textAlign="center">{status}</Typography>}
+          </Box>
+        </Container>
+        <Box
+          sx={{
+            mt: 10,
+          }}
+        >
+          <Consult />
+        </Box>
       </Box>
-    </Box>
+    </>
   );
 };
 
